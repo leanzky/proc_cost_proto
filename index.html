@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Lifecycle | Process Visualization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .phase-card:hover .phase-number { transform: scale(1.2); }
+        .step-line { position: absolute; top: 2rem; right: -2rem; width: 2rem; height: 2px; background: #e2e8f0; }
+        @media (max-width: 768px) { .step-line { display: none; } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-slate-200 py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+                Procurement Lifecycle
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                A comprehensive guide to the strategic phases of sourcing, acquiring, and managing goods and services to ensure organizational efficiency.
+            </p>
+        </div>
+    </header>
+
+    <!-- Phases Grid -->
+    <main class="max-w-6xl mx-auto py-16 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Phase 1 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">01</div>
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Requirement Identification</h3>
+                <p class="text-slate-600 leading-relaxed">Defining the specific needs, technical specifications, and budget constraints for the required acquisition.</p>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">02</div>
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-handshake text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Sourcing & Solicitation</h3>
+                <p class="text-slate-600 leading-relaxed">Identifying potential vendors and issuing RFPs (Request for Proposals) or RFQs (Request for Quotations).</p>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">03</div>
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-scale-balanced text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Evaluation & Selection</h3>
+                <p class="text-slate-600 leading-relaxed">Analyzing bids based on cost, quality, compliance, and vendor reputation to select the best partner.</p>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">04</div>
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-file-signature text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Contracting & Award</h3>
+                <p class="text-slate-600 leading-relaxed">Negotiating final terms and signing the legal contract to formalize the purchasing agreement.</p>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">05</div>
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-truck-fast text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Delivery & Performance</h3>
+                <p class="text-slate-600 leading-relaxed">Receiving the goods/services and monitoring the vendor's performance against agreed KPIs.</p>
+            </div>
+
+            <!-- Phase 6 -->
+            <div class="phase-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative transition-all hover:shadow-md">
+                <div class="phase-number absolute top-6 right-6 text-4xl font-black text-slate-100 transition-transform">06</div>
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-circle-check text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Closing & Review</h3>
+                <p class="text-slate-600 leading-relaxed">Final payment processing and post-mortem analysis to improve future procurement cycles.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Procurement Process Framework. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
