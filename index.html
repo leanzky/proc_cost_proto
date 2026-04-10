@@ -78,7 +78,7 @@
             input.value = '';
 
             try {
-                const response = await fetch('/api/agent', {
+                const response = await fetch('https://human-cavalier-nest.ngrok-free.dev/api/agent', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ command: cmd })
